@@ -1,12 +1,16 @@
-import {fetchPostTitle} from "./rest-api-client-without-dip";
-
 export interface PostUseCaseIn {
   getPostTitle(url: string): Promise<string>
 }
 
+export interface PostUseCaseOut {
+  getPostTitle(): Promise<string>
+}
+
 export class PostInteractor implements PostUseCaseIn {
-  async getPostTitle(url: string): Promise<string> {
-    const result: string = await fetchPostTitle(url)
-    return result
+  constructor(private postUseCaseOut: PostUseCaseOut) {}
+
+  async getPostTitle(): Promise<string> {
+    return await this.postUseCaseOut.getPostTitle()
   }
+
 }

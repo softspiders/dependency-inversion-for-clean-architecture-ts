@@ -6,7 +6,6 @@ export interface PostUseCaseIn {
 
 export class PostInteractor implements PostUseCaseIn {
   async getPostTitle(url: string): Promise<string> {
-    const result: string = await fetchPostTitle(url)
-    return result
+    return await fetchPostTitle(url)
   }
 }
