@@ -2,7 +2,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node dist/index.js"
+    "start-without-dip": "tsc && node dist/index-without-dip.js",
+    "start-dip": "tsc && node dist/index.js"
   },
   "dependencies": {
     "cross-fetch": "^3.0.4"
