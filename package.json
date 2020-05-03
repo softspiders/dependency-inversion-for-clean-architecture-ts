@@ -3,7 +3,7 @@
   "license": "MIT",
   "scripts": {
     "start-without-dip": "tsc && node dist/index-without-dip.js",
-    "start-dip": "tsc && node dist/index.js"
+    "start-dip": "tsc && node dist/index-dip.js"
   },
   "dependencies": {
     "cross-fetch": "^3.0.4"

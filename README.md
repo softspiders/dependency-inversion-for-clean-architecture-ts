@@ -1,12 +1,13 @@
 [SOFTSPIDERS](https://github.com/softspiders/softspiders)
 
-# Dependency Inversion Pattern in TypeScript
+# *Dependency Inversion Principle* (*DIP*) in *TypeScript* as an example of interaction of adjacent layers in *Clean Architecture*
 
 ---
 
 ## Feature tags
 
-- dip
+- clean-architecture
+- dependency-inversion
 - typescript
 
 ---
@@ -19,8 +20,7 @@
 
 ## Parents
 
-[**- dip**](https://github.com/softspiders/typescript)
-
+[**- clean-architecture, dependency-inversion**](https://github.com/softspiders/typescript)
 
 ---
 
@@ -40,8 +40,16 @@ yarn
 
 ## Run
 
+## Run without DIP
+
 ```sh
-yarn start
+yarn start-without-dip
+```
+
+## Run with DIP
+
+```sh
+yarn start-dip
 ```
 
 ---
