@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.0.4"
+  }
+}

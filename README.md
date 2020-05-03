@@ -34,13 +34,14 @@
 ## Installation
 
 ```sh
-npm i
+yarn
 ```
 
-or
+
+## Run
 
 ```sh
-yarn
+yarn start
 ```
 
 ---
